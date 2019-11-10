@@ -15,7 +15,6 @@
 }
 
 .RemoteItem {
-
   border: solid 1px var(--app-border-color);
   border-radius: var(--border-radius);
 
@@ -26,6 +25,6 @@
   grid-row: var(--row);
   grid-column: var(--col);
 
-  background-color:  var(--remote-button-color);
+  background-color: var(--remote-button-color);
   color: var(--remote-button-font-color);
 }
