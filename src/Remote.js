@@ -101,7 +101,9 @@ function Remote({
   setState,
   onMoveClick,
   onRotateClick,
-  onFlipClick
+  onFlipClick,
+  onUndoClick,
+  onDoneClick
 }) {
   const onArrowClick = state.rotateEnabled
     ? onRotateClick
@@ -134,17 +136,37 @@ function Remote({
 
       {extraButtons ? (
         <>
-          <FlipRemoteItem state={state} setState={setState} keys={["4", "f"]} />
+          <FlipRemoteItem
+            state={state}
+            setState={setState}
+            keys={["4", "f"]}
+            onClick={onFlipClick}
+          />
           <RotateRemoteItem
             state={state}
             setState={setState}
             keys={["6", "r"]}
+            onClick={onRotateClick}
           />
         </>
       ) : null}
 
-      <RemoteItem text="Undo" row={1} col={4} color="red" keys={["+", "z"]} />
-      <RemoteItem text="Done" row={2} col={4} color="green" keys={["enter"]} />
+      <RemoteItem
+        text="Undo"
+        row={1}
+        col={4}
+        color="red"
+        keys={["+", "z"]}
+        onClick={onUndoClick}
+      />
+      <RemoteItem
+        text="Done"
+        row={2}
+        col={4}
+        color="green"
+        keys={["enter"]}
+        onClick={onDoneClick}
+      />
     </div>
   );
 }
