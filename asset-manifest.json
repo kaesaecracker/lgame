@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/lgame/static/css/main.618b9e15.chunk.css",
+    "main.js": "/lgame/static/js/main.82f7f953.chunk.js",
+    "main.js.map": "/lgame/static/js/main.82f7f953.chunk.js.map",
+    "runtime-main.js": "/lgame/static/js/runtime-main.450986d1.js",
+    "runtime-main.js.map": "/lgame/static/js/runtime-main.450986d1.js.map",
+    "static/js/2.46044743.chunk.js": "/lgame/static/js/2.46044743.chunk.js",
+    "static/js/2.46044743.chunk.js.map": "/lgame/static/js/2.46044743.chunk.js.map",
+    "index.html": "/lgame/index.html",
+    "precache-manifest.806e7fdd27d95911bde4116189909df1.js": "/lgame/precache-manifest.806e7fdd27d95911bde4116189909df1.js",
+    "service-worker.js": "/lgame/service-worker.js",
+    "static/css/main.618b9e15.chunk.css.map": "/lgame/static/css/main.618b9e15.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.450986d1.js",
+    "static/js/2.46044743.chunk.js",
+    "static/css/main.618b9e15.chunk.css",
+    "static/js/main.82f7f953.chunk.js"
+  ]
+}
