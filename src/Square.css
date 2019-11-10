@@ -1,0 +1,7 @@
+.Square {
+    grid-column: var(--x);
+    grid-row: var(--y);
+    background: var(--color);
+    border: 1px solid;
+    border-radius: 1vmin;
+  }

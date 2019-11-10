@@ -1,0 +1,31 @@
+.Remote {
+  display: grid;
+  grid-template-columns: repeat(4, var(--field-size));
+  grid-template-rows: repeat(2, var(--field-size));
+  gap: var(--board-padding) var(--board-padding);
+  padding: var(--board-padding);
+
+  margin-top: 1vmin;
+  border: solid 1px var(--app-border-color);
+  border-radius: var(--border-radius);
+
+  --highlight-color: orange;
+  --extra-color: grey;
+  --normal-color: lightgrey;
+}
+
+.RemoteItem {
+
+  border: solid 1px var(--app-border-color);
+  border-radius: var(--border-radius);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  grid-row: var(--row);
+  grid-column: var(--col);
+
+  background-color:  var(--remote-button-color);
+  color: var(--remote-button-font-color);
+}

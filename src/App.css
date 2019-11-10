@@ -1,22 +1,42 @@
 .App {
+  --app-background: #282c34;
+  --app-border-color: white;
+
+  --board-size: 55vmin;
+  --board-padding: 1vmin;
+  --field-size: calc(var(--board-size) / 4);
+  --border-radius: 1vmin;
+
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: var(--app-background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  font-size: calc(10px + 1.5vmin);
+
   color: white;
+
+  user-select: none;
 }
 
-.App-link {
-  color: #09d3ac;
+h1 {
+  font-variant-caps: small-caps;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.Board {
+  padding: var(--board-padding);
+  border: solid 1px;
+  border-radius: var(--border-radius);
+  display: grid;
+  grid-template-columns: repeat(4, var(--field-size) [row-start]);
+  grid-template-rows: repeat(4, var(--field-size) [col-start]);
+  gap: var(--board-padding) var(--board-padding);
+  align-items: stretch;
 }
